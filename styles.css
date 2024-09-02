@@ -14,7 +14,7 @@ body {
     background-image: url("assests/images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: max(1200px, 100vw);
     height: 95vh;
     position: relative;
 }
@@ -345,7 +345,10 @@ button:hover {
     margin-left: 30px;
 }
 
-@media screen and (max-width:600px) {
+@media screen  and (max-width:600px) {
+    nav img {
+        width: 94px;
+        }
     .btn-red {
         padding: 3px 22px;
         font-size: 18px;
@@ -382,7 +385,9 @@ button:hover {
         font-size: 30px;
         font-weight: 600;
     }
-
+        #se {
+            width: 35px;
+        }
     section.first>div :nth-child(2) {
         font-size: 16px;
     }
