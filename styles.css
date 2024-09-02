@@ -352,7 +352,7 @@ button:hover {
     margin-left: 30px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:480px) {
     nav img {
         width: 94px;
     }
@@ -372,14 +372,14 @@ button:hover {
     }
 
     .secImg img {
-        width: 400px;
+        width: 250px;
     }
 
     .secImg .vi {
         position: absolute;
-        top: 101px;
-        right: 60px;
-        width: 279px;
+        top: 74px;
+        left: 40px;
+        width: 180px;
     }
 
     .secImg .video {
@@ -387,12 +387,12 @@ button:hover {
         top: 60px;
         bottom: 30px;
         right: 0;
-        width: 250px;
-        left: 70px;
+        width: 150px;
+        left: 40px;
     }
 
     section.first>div :nth-child(1) {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 600;
     }
 
@@ -401,7 +401,8 @@ button:hover {
     }
 
     section.first>div :nth-child(2) {
-        font-size: 16px;
+        font-size: 14px;
+        margin-right: 50px;
     }
 
     .black-box {
@@ -409,27 +410,26 @@ button:hover {
         max-width: 56%;
         transform: translateX(36%) translateY(-70%);
     }
-
     #img {
         width: 35px;
-        margin-right: 10px;
+        
     }
 
     .txt-content .span1 {
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
 
     .txt-content .span2 {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 
     .Box img:last-child {
         width: 30px;
-        margin-left: 50px;
+        margin-left: -60px;
     }
 
     .secImg .img {
-        width: 450px;
+        width: 350px;
         position: relative;
         z-index: 10;
     }
