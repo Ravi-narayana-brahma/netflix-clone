@@ -411,9 +411,10 @@ button:hover {
         max-width: 56%;
         transform: translateX(36%) translateY(-70%);
     }
+
     #img {
         width: 35px;
-        
+
     }
 
     .txt-content .span1 {
@@ -434,12 +435,24 @@ button:hover {
         position: relative;
         z-index: 10;
     }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        color: rgba(255, 255, 255, 0.7);
+    }
 }
 
-@media screen and (min-width: 481px) and (max-width: 769px) {
-    .main {
-        height: 55vh;
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .hero input {
+        width: 250px;
     }
+
+    .btn-red {
+        padding: 4px 5px 4px 5px;
+        font-size: 0.9em;
+        font-weight: 900;
+    }
+
     .secImg .vi {
         position: absolute;
         top: 130px;
@@ -468,14 +481,14 @@ button:hover {
     footer {
         color: rgba(255, 255, 255, 0.7);
         max-width: 60vw;
-        margin: -50px auto;
-        padding: 20px;
-        max-height: 40vh;
+        margin: auto;
+        padding: 3px;
     }
+
 
     .footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr !important;
         color: rgba(255, 255, 255, 0.7);
     }
 
@@ -485,6 +498,7 @@ button:hover {
         gap: 20px;
     }
 }
+
 @media screen and (max-width: 1300px) {
 
     nav {
@@ -522,7 +536,8 @@ button:hover {
 
     footer {
         max-width: 90vw;
-        padding: 75px 0;
+        padding: 34px ;
+        margin: auto;
     }
 
     .footer-item {
@@ -532,7 +547,7 @@ button:hover {
 
     .footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 23px;
     }
 }
