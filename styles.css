@@ -436,8 +436,10 @@ button:hover {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width:900px) {
-
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .main {
+        height: 55vh;
+    }
     .secImg .vi {
         position: absolute;
         top: 130px;
