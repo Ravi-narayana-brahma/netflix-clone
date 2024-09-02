@@ -118,7 +118,7 @@ nav button {
     background-color: #ffff;
     color: black;
     transition: all 1s ease-in;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #re:hover {
@@ -288,6 +288,7 @@ footer .f {
 .f .btn {
     padding: 3px 8px;
     width: 80px;
+    font-size: 12px;
     font-weight: 400;
     color: #ffff;
     background-color: rgba(248, 243, 243, 0.021);
@@ -435,7 +436,7 @@ button:hover {
     }
 }
 
-@media screen and (min-width:481px) and (max-width:900px) {
+@media screen and (min-width: 600px) and (max-width:900px) {
 
     .secImg .vi {
         position: absolute;
@@ -482,7 +483,6 @@ button:hover {
         gap: 20px;
     }
 }
-
 @media screen and (max-width: 1300px) {
 
     nav {
