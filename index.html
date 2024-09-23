@@ -7,6 +7,16 @@
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-1024.png" type="image/x-icon">
+    <script>
+        function changeLanguage1() {
+            var selectedValue = document.getElementById('se').value;
+            window.location.href = selectedValue;
+        }
+        function changeLanguage2() {
+        var selectedValue = document.getElementById('languageSelect').value;
+        window.location.href = selectedValue;
+    }
+    </script>
 </head>
 
 <body>
@@ -14,9 +24,9 @@
         <nav>
             <span><img width="53" src="assests/images/logo.svg" alt=""></span>
             <div class="flex">
-                <select name="Langauges" id="se">
+                <select name="Languages" id="se" onchange="changeLanguage1()">
                     <option value="index.html" id="re">English</option>
-                    <option value="hindi.html"  id="re">हिन्दी</option>
+                    <option value="hindi.html" id="re">हिन्दी</option>
                 </select>
                 <button class="btn btn-red-sm">Sign In</button>
             </div>
@@ -185,7 +195,7 @@
             </div>
         </div>
         <div class="f">
-            <select name="Langauges" class="btn">
+            <select name="Languages" class="btn" id="languageSelect" onchange="changeLanguage2()">
                 <option value="index.html" id="re">English</option>
                 <option value="hindi.html" id="re">हिन्दी</option>
             </select>

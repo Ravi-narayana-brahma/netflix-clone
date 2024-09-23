@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India – ऑनलाइन टीवी शो देखें, ऑनलाइन मूवी देखें</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeLanguage1() {
+            var selectedValue = document.getElementById('se').value;
+            window.location.href = selectedValue;
+        }
+        function changeLanguage2() {
+        var selectedValue = document.getElementById('languageSelect').value;
+        window.location.href = selectedValue;
+    }
+    </script>
 </head>
 
 <body>
@@ -13,11 +23,11 @@
         <nav>
             <span><img width="53" src="assests/images/logo.svg" alt=""></span>
             <div class="flex">
-                <select name="Langauges" id="se" onchange="redirectToPage()">
-                    <option value="index.html">English</option>
-                    <option value="hindi.html">हिन्दी</option>
+                <select name="Languages" id="se" onchange="changeLanguage1()">
+                    <option value="hindi.html" id="re">हिन्दी</option>
+                    <option value="index.html" id="re">English</option>
                 </select>
-                <button class="btn btn-red-sm">साइन इन करें</button>
+                <button class="btn btn-red-sm">साइन इन</button>
             </div>
         </nav>
         <div class="box">
@@ -186,9 +196,9 @@
             </div>
         </div>
         <div class="f">
-            <select name="Langauges" id="se">
-                <option value="index.html">English</option>
-                <option value="#">हिन्दी</option>
+            <select name="Languages" class="btn" id="languageSelect" onchange="changeLanguage2()">
+                <option value="hindi.html" id="re">हिन्दी</option>
+                <option value="index.html" id="re">English</option>
             </select>
             <span>Netflix-India</span>
         </div>
