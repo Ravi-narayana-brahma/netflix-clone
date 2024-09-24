@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-1024.png"
+        type="image/x-icon">
+    <script>
+        function changeLanguage2() {
+            var selectedValue = document.getElementById('languageSelect').value;
+            window.location.href = selectedValue;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span><img width="53" src="assests/images/logo.svg" alt=""></span>
+        </nav>
+        <div class="box"></div>
+        <div class="sign">
+            <h2>साइन अप करें</h2>
+            <input type="email" placeholder="ईमेल या फोन नंबर"><br>
+            <input type="password" placeholder="पासवर्ड"><br>
+            <button class="btn btn-red">साइन इन करें</button><br>
+            <span>या</span><br>
+            <button class="btn btn-red1">साइन-इन कोड का उपयोग करें</button><br>
+            <a href="#"><span>पासवर्ड भूल गए?</span></a><br>
+            <label>
+                <input type="checkbox" name="" id="" style="width: 20px;">&NonBreakingSpace;मुझे याद रखें
+            </label><br>
+            नेटफ्लिक्स पर नए?<a href="index.html">अब साइन अप करें।</a><br><br>
+            <p>
+                यह पृष्ठ Google reCAPTCHA द्वारा सुरक्षित है ताकि यह सुनिश्चित किया जा सके कि आप बॉट नहीं हैं। <a href="#">और जानें।</a>
+            </p>
+        </div>
+    </div>
+    <div class="separtion"></div>
+    <footer>
+        <div class="questions">
+            प्रश्न? कॉल करें <a href="tel:000-800-919-1694">000-800-919-1694</a>
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                <a href="FAQ">अक्सर पूछे जाने वाले प्रश्न</a>
+                <a href="Cookie Preferences">कुकी प्राथमिकताएँ</a>
+            </div>
+            <div class="footer-item">
+                <a href="Help Centre">सहायता केंद्र</a>
+                <a href="Corporate Information">कॉर्पोरेट जानकारी</a>
+            </div>
+            <div class="footer-item">
+                <a href="Terms of Use">उपयोग की शर्तें</a>
+            </div>
+            <div class="footer-item">
+                <a href="Privacy">गोपनीयता</a>
+            </div>
+        </div>
+        <div class="f">
+            <select name="Languages" class="btn" id="languageSelect" onchange="changeLanguage2()">
+                <option value="signup2.html" id="re">हिन्दी</option>
+                <option value="signup.html" id="re">English</option>
+            </select>
+            <span>नेटफ्लिक्स-भारत</span>
+        </div>
+    </footer>
+</body>
+
+</html>

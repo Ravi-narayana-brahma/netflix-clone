@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-1024.png"
+        type="image/x-icon">
+    <script>
+        function changeLanguage1() {
+            var selectedValue = document.getElementById('languageSelect').value;
+            window.location.href = selectedValue;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span><img width="53" src="assests/images/logo.svg" alt=""></span>
+        </nav>
+        <div class="box"></div>
+        <div class="sign">
+            <h2>Sign up</h2>
+            <input type="email" placeholder="Email or Phone number" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <button class="btn btn-red">Sign in</button><br>
+            <span>OR</span><br>
+            <button class="btn btn-red1">Use a Sign-in Code</button><br>
+            <a href="#"><span>Forgot Password?</span></a><br>
+            <label>
+                <input type="checkbox" name="" id="" style="width: 20px;">&NonBreakingSpace;Remember me
+            </label><br>
+            New to Netflix?<a href="index.html">Sign up now.</a><br><br>
+            <p>
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+            </p>
+        </div>
+    </div>
+    <div class="separtion"></div>
+    <footer>
+        <div class="questions">
+            Questions? Call <a href="tel:000-800-919-1694">000-800-919-1694</a>
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                <a href="FAQ">FAQ</a>
+                <a href="Cookie Preferences">Cookie Preferences</a>
+            </div>
+            <div class="footer-item">
+                <a href="Help Centre">Help Centre</a>
+                <a href="Corporate Information">Corporate Information</a>
+            </div>
+            <div class="footer-item">
+                <a href="Terms of Use">Terms of Use</a>
+            </div>
+            <div class="footer-item">
+                <a href="Privacy">Privacy</a>
+            </div>
+        </div>
+        <div class="f">
+            <select name="Languages" class="btn" id="languageSelect" onchange="changeLanguage1()">
+                <option value="signup.html" id="re">English</option>
+                <option value="signup2.html" id="re">हिन्दी</option>
+            </select>
+            <span>Netflix-India</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -27,7 +27,6 @@ body {
     top: 0;
     background-color: black;
 }
-
 nav {
     max-width: 60vw;
     margin: auto;
@@ -113,7 +112,94 @@ nav button {
     width: 90px;
     height: 30px;
 }
+.sign {
+    margin: -20px auto auto auto;
+    align-items: center;
+    width: 90%;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 40;
+    color: #fff;
+}
+.sign h2 {
+    text-align: center;
+}
+.sign input[type="email"], .sign input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    height: 35px;
+}
 
+.sign input::placeholder {
+    color: #aaa;
+}
+
+.sign button.btn-red {
+    width: 90%;
+    padding: 12px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sign button.btn-red:hover {
+    background-color: #f40612;
+}
+
+.sign button.btn-red1 {
+    width: 90%;
+    padding: 12px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.sign span {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.sign a {
+    color: #fff;
+    text-decoration: underline;
+}
+.sign p {
+    font-size: 14px;
+}
+.sign a:hover {
+    text-decoration: none;
+}
+
+label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #fff;
+}
 #re {
     background-color: #ffff;
     color: black;
