@@ -168,12 +168,14 @@ nav button {
     border: none;
     border-radius: 5px;
     color: #fff;
-    font-size: 18px;
+    font-size: 13px;
     cursor: pointer;
     margin-left: 10px;
     margin-bottom: 15px;
 }
-
+.sign button.btn-red1:hover {
+    background-color: #f40612;
+}
 .sign span {
     color: #fff;
     font-size: 13px;
