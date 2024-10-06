@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-1024.png"
         type="image/x-icon">
-    <script>
-        function changeLanguage2() {
-            var selectedValue = document.getElementById('languageSelect').value;
-            window.location.href = selectedValue;
-        }
-    </script>
+    
 </head>
 
 <body>
@@ -35,8 +30,11 @@
             </label><br>
             नेटफ्लिक्स पर नए?<a href="hindi.html">अब साइन अप करें।</a><br><br>
             <p>
-                यह पृष्ठ Google reCAPTCHA द्वारा सुरक्षित है ताकि यह सुनिश्चित किया जा सके कि आप बॉट नहीं हैं। <a href="#">और जानें।</a>
-            </p>
+                यह पृष्ठ Google reCAPTCHA द्वारा सुरक्षित है ताकि यह सुनिश्चित किया जा सके कि आप बॉट नहीं हैं। <a href="#" id="learnMore">और जानें।</a>
+            </p><br>
+            <div id="recaptchaInfo" class="hidden">
+                <p>Google reCAPTCHA से इकट्ठा की गई जानकारी Google की <a href="#">प्रायवेसी पॉलिसी</a> और <a href="#">सेवा की शर्तों</a> के अधीन है. इसे reCAPTCHA सेवा देने, उसे बनाए रखने और सुधारने के लिए और सामान्य सुरक्षा उद्देश्य के लिए इस्तेमाल किया जाता है (Google इसका इस्तेमाल करके पर्सनलाईज़ किए गए विज्ञापन नहीं दिखाता).</p>
+            </div>
         </div>
     </div>
     <div class="separtion"></div>
@@ -68,6 +66,17 @@
             <span>नेटफ्लिक्स-भारत</span>
         </div>
     </footer>
+    <script>
+        function changeLanguage2() {
+            var selectedValue = document.getElementById('languageSelect').value;
+            window.location.href = selectedValue;
+        }
+        document.getElementById('learnMore').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default anchor click behavior
+            var info = document.getElementById('recaptchaInfo');
+            info.classList.toggle('hidden'); // Toggle visibility
+        });
+    </script>
 </body>
 
 </html>

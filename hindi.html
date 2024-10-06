@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India – ऑनलाइन टीवी शो देखें, ऑनलाइन मूवी देखें</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function changeLanguage1() {
-            var selectedValue = document.getElementById('se').value;
-            window.location.href = selectedValue;
-        }
-        function changeLanguage2() {
-        var selectedValue = document.getElementById('languageSelect').value;
-        window.location.href = selectedValue;
-    }
-    </script>
+    
 </head>
 
 <body>
@@ -27,7 +18,7 @@
                     <option value="hindi.html" id="re">हिन्दी</option>
                     <option value="index.html" id="re">English</option>
                 </select>
-                <button class="btn btn-red-sm1" onclick="window.location.href='signinh.html'">साइन इन करें</button>
+                <button class="btn btn-red-sm" onclick="window.location.href='signinh.html'">साइन इन</button>
             </div>
         </nav>
         <div class="box">
@@ -107,53 +98,84 @@
     <div class="separation"></div>
     <section class="faq">
         <h2>अक्सर पूछे जाने वाले प्रश्न</h2>
-        <div class="faqbox">
-            <span>Netflix क्या है?</span>
+        <div class="faqbox" data-target="answer1">
+            <span>नेटफ्लिक्स क्या है?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                fill="white">
+                fill="white" class="icon">
                 <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </div>
-        <div class="faqbox">
-            <span>Netflix की लागत कितनी है?</span>
+        <div id="answer1" class="answer">
+            <p>नेटफ्लिक्स एक स्ट्रीमिंग सेवा है जो टीवी शो, मूवीज, एनीमे और अधिक हजारों इंटरनेट-कनेक्टेड डिवाइस पर ऑफर
+                करता है।</p>
+        </div>
+
+        <div class="faqbox" data-target="answer2">
+            <span>नेटफ्लिक्स की कीमत कितनी है?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                fill="white">
+                fill="white" class="icon">
                 <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </div>
-        <div class="faqbox">
-            <span>मैं कहां देख सकता हूँ?</span>
+        <div id="answer2" class="answer">
+            <p>आप अपने स्मार्टफोन, टैबलेट, स्मार्ट टीवी, लैपटॉप या स्ट्रीमिंग डिवाइस पर नेटफ्लिक्स देख सकते हैं। प्लान
+                ₹149 से ₹649 प्रति माह तक होते हैं। कोई अतिरिक्त शुल्क नहीं, कोई अनुबंध नहीं।</p>
+        </div>
+
+        <div class="faqbox" data-target="answer3">
+            <span>मैं कहां देख सकता हूं?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                fill="white">
+                fill="white" class="icon">
                 <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </div>
-        <div class="faqbox">
+        <div id="answer3" class="answer">
+            <p>आप अपने कंप्यूटर या किसी भी इंटरनेट-कनेक्टेड डिवाइस पर netflix.com से तुरंत देख सकते हैं। आप iOS या
+                Android ऐप से डाउनलोड कर सकते हैं और कहीं भी बिना इंटरनेट कनेक्शन के देख सकते हैं।</p>
+        </div>
+
+        <div class="faqbox" data-target="answer4">
             <span>मैं कैसे रद्द करूं?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                fill="white">
+                fill="white" class="icon">
                 <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </div>
-        <div class="faqbox">
-            <span>मैं Netflix पर क्या देख सकता हूँ?</span>
+        <div id="answer4" class="answer">
+            <p>नेटफ्लिक्स लचीला है। कोई अनुबंध नहीं है और आप कभी भी अपनी सदस्यता ऑनलाइन रद्द कर सकते हैं। कोई रद्द शुल्क
+                नहीं है।</p>
+        </div>
+
+        <div class="faqbox" data-target="answer5">
+            <span>मैं नेटफ्लिक्स पर क्या देख सकता हूं?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                fill="white">
+                fill="white" class="icon">
                 <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
         </div>
-        <div class="faqbox">
-            <span>क्या Netflix बच्चों के लिए अच्छा है?</span>
+        <div id="answer5" class="answer">
+            <p>नेटफ्लिक्स के पास फीचर फिल्में, डॉक्यूमेंट्री, टीवी शो, एनीमे और नेटफ्लिक्स ओरिजिनल्स का बड़ा संग्रह है।
+                आप जितना चाहें देख सकते हैं, जब चाहें।</p>
+        </div>
+
+        <div class="faqbox" data-target="answer6">
+            <span>क्या नेटफ्लिक्स बच्चों के लिए अच्छा है?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                fill="white">
+                fill="white" class="icon">
                 <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
+        </div>
+        <div id="answer6" class="answer">
+            <p>नेटफ्लिक्स किड्स अनुभव आपके सदस्यता में शामिल है, जो माता-पिता को नियंत्रण प्रदान करता है जबकि बच्चे अपने
+                खुद के क्षेत्र में परिवार के अनुकूल टीवी शो और फिल्में देख सकते हैं।</p>
+        </div>
+
         </div>
         <div class="hero">
             <span style="font-size: 16px; font-weight: 400;">देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या पुनः आरंभ
@@ -203,6 +225,36 @@
             <span>Netflix-India</span>
         </div>
     </footer>
+    <script>
+        function changeLanguage1() {
+            var selectedValue = document.getElementById('se').value;
+            window.location.href = selectedValue;
+        }
+        function changeLanguage2() {
+            var selectedValue = document.getElementById('languageSelect').value;
+            window.location.href = selectedValue;
+        }
+        const faqBoxes = document.querySelectorAll('.faqbox');
+
+        faqBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const targetId = box.getAttribute('data-target');
+                const answer = document.getElementById(targetId);
+                const svg = box.querySelector('svg');
+                const path = svg.querySelector('path');
+
+                // Toggle the answer display
+                if (answer.style.display === "block") {
+                    answer.style.display = "none"; // Hide the answer
+                    path.setAttribute('d', 'M12 4V20M20 12H4'); // Set back to +
+                } else {
+                    answer.style.display = "block"; // Show the answer
+                    path.setAttribute('d', 'M18 6L6 18M6 6l12 12'); // Set to X
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

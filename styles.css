@@ -194,7 +194,10 @@ nav button {
 .sign a:hover {
     text-decoration: none;
 }
-
+.hidden {
+    display: none;
+    
+}
 label {
     font-size: 14px;
     display: flex;
@@ -233,6 +236,7 @@ label {
     width: 80px;
     height: 30px;
 }
+
 .hero-buttuns {
     display: flex;
     align-items: center;
@@ -325,7 +329,18 @@ section.first>div :nth-child(2) {
     margin: 34px auto;
     cursor: pointer;
 }
-
+.answer {
+    display: none;
+    transition: all 0.5s ease-out;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
 .faqbox:hover {
     background-color: #414141;
     color: coral;
